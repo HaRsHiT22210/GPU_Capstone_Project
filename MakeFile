@@ -1,0 +1,11 @@
+CXX = nvcc
+CXXFLAGS = -O2 `pkg-config --cflags opencv4`
+LDFLAGS = `pkg-config --libs opencv4`
+
+all: build
+
+build:
+	$(CXX) src/main.cu src/image_utils.cu -o gpu_image_proc $(CXXFLAGS) $(LDFLAGS)
+
+clean:
+	rm -f gpu_image_proc
