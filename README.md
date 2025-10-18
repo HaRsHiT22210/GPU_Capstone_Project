@@ -12,4 +12,4 @@ The project uses NVIDIA CUDA for parallel image processing and OpenCV for image 
 2. Install OpenCV 4.x (`sudo apt install libopencv-dev`).
 3. Clone this repository:
 ```bash
-git clone https://github.com/<yourusername>/GPU_Capstone_Project.git
+git clone https://github.com/harshit22210/GPU_Capstone_Project.git
